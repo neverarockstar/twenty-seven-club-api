@@ -339,6 +339,6 @@ app.get('/api/:name',(req,res) =>{
     // if the passed in parameter exists in the database, will return details
 })
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`The server is now running on port ${PORT}! Better go catch it!`);
 })
