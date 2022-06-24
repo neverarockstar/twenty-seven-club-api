@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 const PORT = 8000;
+const rookout = require('rookout')
+
+rookout.start({
+    token: '9e58297f0aa5649217c19b2e7945ab953282288029a6eeba0403f3239b49233b',labels: {env: 'dev'}})
 
 app.use(cors())
 
